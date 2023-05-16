@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Oswald:wght@500&family=Rubik:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            ;
+        }
+        .main{
+            
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            ;
+        }
+        ul{
+
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+            color: white;
+            transition: .5s;
+            ;
+        }
+        header{
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 2rem;
+            /* width: 100vw; */
+            ;
+        }
+        .logo{
+            color: white;
+            background: url(logo.jpg);
+            background-size: cover;
+            height: 4rem;
+            width: 4rem;
+        }
+        .login{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            ;
+        }
+        .login button{
+            /* padding: .5rem 1rem; */
+            
+        }
+        ul li{
+            transition: .6s;
+            font-family: 'Bruno Ace SC', cursive;
+        font-family: 'Oswald', sans-serif;
+        }
+        ul li:hover{
+            color: rgb(255, 25, 25);
+        }
+         .inner1{
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            padding: 5rem 2rem;
+            height: 50rem;
+            background: url(peakpx\ \(1\).jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family:'Bruno Ace SC', cursive;
+            font-family: 'Oswald', sans-serif;
+        }
+        .inner1 h1{
+            letter-spacing: 9px;
+            ;
+        }
+        .inner1 p{
+            width: 25%;
+        }
+
+        .inner2{
+    
+            width: 100%;
+            ;
+        }
+        .inner2 ul{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding: 2rem 0;
+        }
+        .inner2 ul li{
+            height: 25rem ;
+            width: 15rem;
+            background-color: rgb(255, 255, 255);
+            ;
+        }
+
+        .boxcont{
+            height: 30rem;
+            width: 100%;
+            background-color: cadetblue;
+            /* border: 2px solid black; */
+        }
+        .boxcontmain{
+            display: flex;
+            flex-direction: column;
+            gap: .2rem;
+            ;
+        }
+        .footer{
+            background-color: rgba(0, 0, 0, 0.795);
+            height: 20rem;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            ;
+        }
+        .foot{
+            border: 2px solid white;
+             /* background-color: white; */
+             ;
+            height: 100%;
+            width: 33.3%;
+            ;
+        }
+        .login{
+            border: none;
+            outline: none;
+            border-radius: 3px;
+        }
+        .login button{
+            position: relative;
+            outline: none;
+            border: none;
+            padding: 1rem 1.5rem;
+            ;
+            z-index: 2;
+            /* background-color: blue; */
+            transition: .5s;
+            cursor: pointer;
+        } 
+        .login button::after{
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            background-color: #dd1d5a;
+            left: 0;
+            bottom: 0;
+            transition: .6s;
+            cursor: pointer;
+            z-index: -1;
+            transform: scale(.7);
+            border-radius: 5px;
+            ;
+        }
+        .login button:hover::after{
+            width: 100%;
+            ;
+        }
+        .one{
+            background: url(https://i.pinimg.com/originals/9f/b4/34/9fb434b53249d91ad7ee45d8e1e1c7a9.gif) no-repeat;
+            background-position: center;
+            background-size: cover;
+            ;
+        }
+        .two{
+            background: url(https://i.pinimg.com/originals/05/4b/3b/054b3bd0ab6992c011d2bf857afdfeef.gif) no-repeat;
+            background-position: center;
+            background-size: cover;
+            ;
+        }
+        .three{
+            background: url(https://i.pinimg.com/originals/a1/8c/60/a18c60561086c6ca0d921590fc6d7396.gif) no-repeat;
+            background-position: center;
+            background-size: cover;
+            ;
+        }
+        .four{
+            background: url(https://i.pinimg.com/originals/1d/71/5b/1d715bfa3d709bf1bff9b30f0441d508.gif) no-repeat;
+            background-position: center;
+            background-size: cover;
+            ;
+        }
+        .five{
+            background: url(https://i.pinimg.com/originals/6b/6e/f8/6b6ef8fd3d6cb82ac05d6dfcbeb80072.gif) no-repeat;
+            background-position: center;
+            background-size: cover;
+            ;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <div class="logo">
+            
+            </div>
+            <ul>
+                <li>Lorem</li>
+                <li>Lorem</li>
+                <li>Lorem</li>
+                <li>Lorem</li>
+                <li>Lorem</li>
+            </ul>
+            <div class="login">
+                <button>Sign- in</button>
+                <button>log- in</button>
+            </div>
+        </header>
+
+        <div class="inner1">
+            <h3>Tony Stark</h3>
+             <h1>IRON MAN</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam totam sint, dignissimos hic nobis assumenda cum alias perspiciatis laborum illo tempore deserunt, iusto impedit nostrum soluta, repudiandae ducimus laudantium unde quis error cumque.</p>
+        </div>
+
+        <div class="inner2">
+            <ul>
+                <li class="one"></li>
+                <li class="two"></li>
+                <li class="three"></li>
+                <li class="four"></li>
+                <li class="five"></li>
+            </ul>
+        </div>
+
+        <!-- <div class="boxcontmain">
+            <div class="inner3 boxcont" style="background-image: url(1433116.jpg);">
+
+            </div>
+    
+            <div class="inner4 boxcont4 " style="background-image: url(1433116.jpg);">
+                
+            </div>
+    
+            <div class="inner5 boxcont" style="background-image: url(1433116.jpg);">
+                
+            </div>
+    
+            <div class="inner6 boxcont" style="background-image: url(1433116.jpg);">
+                
+            </div>
+    
+            <div class="inner7 boxcont" style="background: url(1.jpg) no-repeat; ba">
+                
+            </div>
+        </div> -->
+
+        <div class="footer">
+            <div class="foot foot1"></div>
+            <div class="foot foo2"></div>
+            <div class="foot foot3"></div>
+        </div>
+    </div>
+</body>
+</html>
